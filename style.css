@@ -1,34 +1,26 @@
 
 
-section {
+.hero{
     height: 50vh;
-  
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 2rem;
-    color:blue;
 }
-
 /*background animation*/
 @keyframes pulse-bg {
     0% {
-        background-color: blueviolet
+        background-color: blueviolet;
     }
     50% {
         background-color: greenyellow;
     }
     100% {
-        background-color:gold
+        background-color:gold;
     }
 }
-
-
 body{
     margin: 0;
-    height: 100vh;
+    height: 50vh;
     animation-name: pulse-bg;
     animation-duration: 5s;
     animation-iteration-count: infinite; 
@@ -40,8 +32,6 @@ h1,h2 {
     padding-top: 20vh;
     color: white;
 }
-
-
 /*element animation*/
 .debug {
  width:200px;
@@ -49,19 +39,67 @@ h1,h2 {
   background-color: red;
   transition: width 3s;
 }
-
 .debug:hover {
   width: 1200px;
 }
-
 /* Smooth element transition */
 .deadline {
   opacity: 0.5;
   transform: scale(1);
   transition: all 0.3s ease-in-out; 
 }
-
 .deadline:hover {
   opacity: 1;
   transform: scale(1.1); 
 }
+/* interactive cards  */
+.success{
+    color:black;
+    text-align:center;
+    border-radius:10px;
+ transition:0.4s;   
+}
+.success:hover{
+    transform:scale(1.1);
+    background:black;
+    color:white;
+}
+.deadline {
+  background-color: lightgray;
+  padding: 10px;
+  transition: 0.3s;
+}
+/* interactive hover */
+section:hover {
+  background-color: blue;
+}
+/* click effects interactive  */
+.learning{
+    padding:20px;
+    cursor:pointer;
+}
+.learning:active{
+    transform:scale(0.9);
+}
+/* scroll effects  */
+/* basic scroll  */
+html{
+    scroll-behavior:smooth;
+}
+
+/*scroll snap*/ 
+.hero {
+  scroll-snap-type: y mandatory; 
+  overflow-y:scroll
+}
+.section {
+  scroll-snap-align: start; 
+}
+
+
+
+
+
+
+
+
