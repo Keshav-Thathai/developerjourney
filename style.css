@@ -96,6 +96,28 @@ html{
   scroll-snap-align: start; 
 }
 
+@media screen and (max-width:400px){
+
+    .section{
+        width:90%;
+        margin: 20px auto;
+    }
+    
+    h1{
+        font-size:1.4rem;
+    }
+    button
+    {
+        width:100%;
+        font-size:1.1rem;
+        
+    }
+    body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 
