@@ -1,0 +1,67 @@
+
+
+section {
+    height: 50vh;
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color:blue;
+}
+
+/*background animation*/
+@keyframes pulse-bg {
+    0% {
+        background-color: blueviolet
+    }
+    50% {
+        background-color: greenyellow;
+    }
+    100% {
+        background-color:gold
+    }
+}
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    animation-name: pulse-bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+
+h1,h2 {
+    text-align: center;
+    padding-top: 20vh;
+    color: white;
+}
+
+
+/*element animation*/
+.debug {
+ width:200px;
+ height:200px;
+  background-color: red;
+  transition: width 3s;
+}
+
+.debug:hover {
+  width: 1200px;
+}
+
+/* Smooth element transition */
+.deadline {
+  opacity: 0.5;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out; 
+}
+
+.deadline:hover {
+  opacity: 1;
+  transform: scale(1.1); 
+}
